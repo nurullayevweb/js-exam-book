@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+img {
+    display: block;
+    height: auto;
+}
+
+
+body {
+    max-width: 100%;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header {
+    padding: 24px 12px;
+    background-color: #1B2A4B;
+}
+
+.wrapper a {
+    color: #fff;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.header__logo img {
+    width: 32px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__list a {
+    transition: all 0.15s ease-in-out;
+    font-weight: 500;
+}
+
+.nav__list a:hover {
+    color: #FFC15E;
+}
+
+.hero-banner {
+    background-image: url(https://images.wallpaperscraft.com/image/single/books_library_shelves_138556_3840x2400.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 48px 56px;
+    background-color: rgba(27, 42, 75, 0.7);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1.6px solid rgba(255, 193, 94, 0.99);
+}
+
+.hero-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    font-size: 18px;
+    background-color: #1D4382;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.cta-button:hover {
+    color: #FFC15E;
+}
+
+/* books__all */
+.books {
+    padding-top: 64px;
+}
+
+.books__all {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+}
+
+.books__titlee {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    color: #1D4382;
+}
+
+.books__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.books__item {
+    width: 23.6%;
+    min-width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 0 16px;
+    overflow: hidden;
+    padding: 16px;
+    transition: all 0.2s ease-in-out;
+    /* border: 0.5px solid aliceblue; */
+    border: 0.6px solid rgba(27, 42, 75, 0.2);
+}
+
+.books__item:hover {
+    box-shadow: rgba(27, 42, 75, 0.25) 0px 2px 8px 0px;
+    border: 0.6px solid rgba(27, 42, 75, 0.25);
+    transform: scale(1.015);
+}
+
+.books__item img {
+    width: 100%;
+    height: 400px;
+    border-radius: 0 16px 0 16px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .books__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.books__title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #1D4382;
+    transition: all 0.2s ease-in-out;
+}
+.books__item:hover .books__title {
+    color: #2F9CF1;
+}
+
+.books__data__list {
+    display: flex;
+    column-gap: 20px;
+    /* row-gap: 12px; */
+    flex-wrap: wrap;
+}
+
+.books__data__time,
+.books__data__number,
+.books__data__count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.books__data__time::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/time.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.books__data__number::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/boook.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.books__data__count::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/countries.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.books__owner {
+    opacity: 0.7;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* books__links */
+
+.books__links {
+    display: flex;
+    margin: 16px 0 4px 0;
+    justify-content: space-between;
+}
+
+.books__wikipedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding: 10px;
+    background-color: #1D4382;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.books__wikipedia::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(images/arrow.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    transform: rotate(270deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.books__wikipedia:hover::after {
+    transform: rotate(630deg);
+}
+
+.books__shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    padding: 12px;
+    background-color: #2F9CF1;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.books__shop::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(images/shop.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.books__shop:hover::after {
+    transform: scale(1.3);
+}
+
+.books__wikipedia:hover{
+    background-color: #1B2A4B;
+}
+
+footer {
+    background-color: #1B2A4B;
+    padding: 32px 20px;
+    text-align: center;
+    margin-top: 64px;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(207, 220, 232);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2F9CF1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1D4382;
+}
